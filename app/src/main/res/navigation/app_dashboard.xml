@@ -3,18 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/app_dashboard"
-    app:startDestination="@id/storeFragment">
+    app:startDestination="@id/homeFragment">
 
     <fragment
-        android:id="@+id/storeFragment"
-        android:name="com.meetup.ap.view.fragment.StoreFragment"
-        android:label="fragment_store"
-        tools:layout="@layout/fragment_store">
+        android:id="@+id/homeFragment"
+        android:name="com.meetup.ap.view.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
         <action
-            android:id="@+id/action_storeFragment_to_informationFragment"
-            app:destination="@id/informationFragment"
-            app:enterAnim="@android:anim/slide_in_left" />
+            android:id="@+id/action_homeFragment2_to_informationFragment"
+            app:destination="@id/informationFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/informationFragment"
         android:name="com.meetup.ap.view.fragment.InformationFragment"
@@ -38,5 +38,6 @@
         android:name="com.meetup.ap.view.fragment.CheckOutFragment"
         android:label="fragment_check_out"
         tools:layout="@layout/fragment_check_out" />
+
 
 </navigation>

@@ -2,6 +2,6 @@ package com.meetup.ap.view.fragment
 
 import androidx.lifecycle.ViewModel
 
-class StoreViewModel : ViewModel() {
+class EventViewModel : ViewModel() {
     // TODO: Implement the ViewModel
 }

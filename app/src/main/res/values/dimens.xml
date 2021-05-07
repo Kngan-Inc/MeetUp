@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_margin">12dp</dimen>
+    <dimen name="exit_duration">100</dimen>
+    <dimen name="enter_duration">100</dimen>
+    <dimen name="constrain_padding">28dp</dimen>
+</resources>

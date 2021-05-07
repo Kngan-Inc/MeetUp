@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Style.Meetup.toolbar" parent="@style/Widget.MaterialComponents.Toolbar">
+        <item name="contentInsetLeft">0dp</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="backgroundColor">@color/white</item>
+    </style>
+
+    <style name="Style.Meetup.FullScreenDialogStyle" parent="Theme.MeetUp">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">?attr/colorPrimary</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="statusBarForeground">?attr/colorPrimary</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="enterAnim">@anim/enter_from_bottom</item>
+    </style>
+
+    <style name="Style.Meetup.BigTitle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="Style.Meetup.OutLineButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">?attr/colorPrimary</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="Style.Meetup.FillButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="android:padding">12dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="rippleColor">@color/white_blue</item>
+    </style>
+
+    <style name="Style.Meetup.MaterialTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

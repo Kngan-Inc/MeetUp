@@ -3,21 +3,44 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/app_dashboard"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/signInFragment">
+
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.meetup.app.view.fragment.SignInFragment"
+        android:label="@string/sign_in"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_signInFragment_to_OTPFragment"
+            app:destination="@id/OTPFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.meetup.ap.view.fragment.HomeFragment"
+        android:name="com.meetup.app.view.fragment.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment2_to_informationFragment"
             app:destination="@id/informationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_createFragment"
+            app:destination="@id/createFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right" />
+
     </fragment>
 
     <fragment
         android:id="@+id/informationFragment"
-        android:name="com.meetup.ap.view.fragment.InformationFragment"
+        android:name="com.meetup.app.view.fragment.InformationFragment"
         android:label="fragment_information"
         tools:layout="@layout/fragment_information">
         <action
@@ -26,7 +49,7 @@
     </fragment>
     <fragment
         android:id="@+id/confirmFragment"
-        android:name="com.meetup.ap.view.fragment.ConfirmFragment"
+        android:name="com.meetup.app.view.fragment.ConfirmFragment"
         android:label="fragment_confirm"
         tools:layout="@layout/fragment_confirm">
         <action
@@ -35,9 +58,19 @@
     </fragment>
     <fragment
         android:id="@+id/checkOutFragment"
-        android:name="com.meetup.ap.view.fragment.CheckOutFragment"
+        android:name="com.meetup.app.view.fragment.CheckOutFragment"
         android:label="fragment_check_out"
         tools:layout="@layout/fragment_check_out" />
 
+    <fragment
+        android:id="@+id/createFragment"
+        android:name="com.meetup.app.view.fragment.CreateFragment"
+        android:label="fragment_create"
+        tools:layout="@layout/fragment_create" />
+    <fragment
+        android:id="@+id/OTPFragment"
+        android:name="com.meetup.app.view.fragment.OTPFragment"
+        android:label="fragment_otp"
+        tools:layout="@layout/fragment_otp" />
 
 </navigation>

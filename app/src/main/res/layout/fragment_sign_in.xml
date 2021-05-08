@@ -38,6 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:drawableEnd="@drawable/ic_google"
+        android:drawableTintMode="src_over"
         android:text="@string/sign_in_with_google"
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 

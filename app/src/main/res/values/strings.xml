@@ -4,5 +4,7 @@
     <string name="sign_in_with_google">Sign in with Google</string>
     <string name="sign_in_to_continue">Sign in to continue</string>
     <string name="choose_phone_number">Choose phone number</string>
-    <string name="enter_your_phone_number">Enter your phone number</string>
+    <string name="phone_number">Phone number</string>
+    <string name="get_started">Get started</string>
+    <string name="i_got_it">I got it</string>
 </resources>

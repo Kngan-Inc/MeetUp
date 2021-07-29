@@ -8,7 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.meetup.app.R
+import com.meetup.app.`interface`.ItemInterface
 import com.meetup.app.databinding.FragmentSignInBinding
+import com.meetup.app.view.epoxy.controller.MainController
 
 class SignInFragment : Fragment() {
 
@@ -32,10 +34,18 @@ class SignInFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         val navController = findNavController()
 
-        binding.signInButton.setOnClickListener {
-            navController.navigate(R.id.action_signInFragment_to_OTPFragment)
-        }
+//        binding.signInButton.setOnClickListener {
+//            navController.navigate(R.id.action_signInFragment_to_OTPFragment)
+//        }
 
+        val controller = MainController(object: ItemInterface {
+            override fun onItemClick(item: String) {
+                navController.navigate(R.id.action_signInFragment_to_OTPFragment)
+            }
+        })
+        controller.submit(list = arrayListOf("hi"))
+
+        binding.recyclerview.setController(controller)
     }
 
 }

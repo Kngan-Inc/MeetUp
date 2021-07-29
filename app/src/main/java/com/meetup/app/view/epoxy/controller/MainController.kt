@@ -27,6 +27,7 @@ class MainController(
         }
     }
 
+
     fun submit(list: ArrayList<String>) {
         this.list.addAll(list)
         requestModelBuild()
